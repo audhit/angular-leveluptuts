@@ -1,0 +1,12 @@
+<input type="text" ng-model="search">
+<ul>
+    <li ng-if="displayName.toggle" ng-repeat="name in displayName.names | filter:search">
+        <name-list></name-list>
+    </li>
+</ul>
+<button ng-show="!displayName.toggle" ng-click="displayName.toggle = true">Show Names</button>
+<button ng-show="displayName.toggle" ng-click="displayName.toggle = false">Hide Names</button>
+<form ng-submit="displayName.addPerson()">
+    <input type="text" placeholder="Type Name" ng-model="displayName.newname">
+    <input type="submit" value="Submit">
+</form>

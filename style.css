@@ -1,0 +1,56 @@
+
+.hate{
+	background-color: red;
+	color: white;
+}
+
+.love{
+	background-color: green;
+	color: white;
+}
+.hidden{
+	display: none;
+}
+
+li.ng-enter{
+	
+	transition: 2s ease all;
+	opacity: 0;
+	transform:translateX(-100%);
+
+}
+li.ng-enter.ng-enter-active{
+	
+	transition: 2s ease all;
+	opacity: 1;
+	transform:translateX(0);
+
+
+}
+
+li.ng-leave{
+	
+	transition: 2s ease all;
+	opacity: 1;
+	transform:translateX(0);
+
+}
+li.ng-leave.ng-leave-active{
+	
+	transition: 2s ease all;
+	opacity: 0;
+	transform:translateX(50%);
+
+
+}
+
+.highlight {
+  transition:1s linear all;
+}
+
+.highlight.on {
+  background:yellow;
+}
+.highlight.on-remove {
+  background:black;
+}
